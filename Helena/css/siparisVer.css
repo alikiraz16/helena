@@ -1,0 +1,152 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #10375C;
+    background: linear-gradient(to bottom, #f3e2be, #ece6db, #e8e1d5, #ece7e2);
+}
+
+header {
+    background-color: #F3C623;
+    color: black;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+header h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+.category-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #FFD460;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: #10375C;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background-color: #FFD460;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.category-nav a.active {
+    background-color: #F3C623;
+    color: white;
+}
+
+.category-nav a:hover {
+    background-color: #ffce45;
+    color: #10375C;
+}
+
+.menu-container {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFBE0;
+    border: 1px solid #F3C623;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #F3C623;
+}
+
+th {
+    background-color: #FFD460;
+    color: #333;
+}
+
+.adjust-btn {
+    background-color: #FFD460;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.adjust-btn:hover {
+    background-color: #F3C623;
+    color: white;
+}
+
+.button-space {
+    display: inline-block;
+    width: 10px;
+}
+
+.cart {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 300px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 15px;
+    box-shadow: 5px 3px 20px rgba(0, 0, 0, 1);
+    z-index: 1000;
+}
+    
+.cart h3 {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+}
+    
+#cart-items {
+    max-height: 150px;
+    overflow-y: auto;
+    margin: 10px 0;
+}
+    
+.cart-item {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+    
+#total-price {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+    
+#order-button {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 20px;
+    background-color: #10375C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+    
+#order-button:hover {
+    background-color: #218838;
+}
