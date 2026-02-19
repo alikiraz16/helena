@@ -54,6 +54,3 @@ Sistem aşağıdaki ana tablolardan oluşur:
 2.  `helena.sql` dosyasını yerel veritabanınıza import edin.
 3.  `php/baglan.php` dosyasındaki veritabanı bağlantı bilgilerini güncelleyin.
 4.  Sunucunuzu başlatın ve tarayıcıdan erişin.
-
----
-*Bu proje [Ali Kiraz](https://github.com/alikiraz16) tarafından geliştirilmiştir.*
