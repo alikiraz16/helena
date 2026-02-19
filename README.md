@@ -1,42 +1,59 @@
-# Helena Kütüphane Cafe
+# Helena Library Cafe Automation System
 
-Helena Kütüphane Cafe, müşterilerin rahat bir ortamda kitap okuyup, yiyecek ve içecek siparişi verebileceği, aynı zamanda masa ve sandalye rezervasyonu yapabileceği web tabanlı bir otomasyon sistemidir.
+![Helena Logo](./dosyalar/LogoIcon/logo.png)
 
-## Özellikler
+**Helena**, kütüphane ve kafe deneyimini dijitalleştiren, kullanıcıların çalışma alanlarını rezerve etmelerini ve sipariş vermelerini sağlayan kapsamlı bir web tabanlı otomasyon sistemidir.
 
-### Müşteri Paneli
-*   **Kayıt ve Giriş:** Kullanıcılar sisteme kayıt olabilir ve giriş yapabilir.
-*   **Rezervasyon:** Kütüphane içerisindeki masa ve sandalyeler için belirli saat aralıklarında rezervasyon yapılabilir.
-*   **Sipariş:** Menüden yiyecek ve içecek siparişi verilebilir.
-*   **Profil Yönetimi:** Kullanıcı bilgileri güncellenebilir.
-*   **Geçmiş Görüntüleme:** Geçmiş siparişler ve rezervasyonlar görüntülenebilir.
+## 🚀 Proje Hakkında
 
-### Admin Paneli
-*   **Admin Girişi:** Yöneticiler için özel giriş paneli.
-*   **Sipariş Yönetimi:** Müşteri siparişlerini görüntüleme ve onaylama.
-*   **Kitap Yönetimi:** Kütüphanedeki kitapların listelenmesi ve yönetimi.
-*   **Rezervasyon Takibi:** Aktif ve geçmiş rezervasyonların kontrolü.
+Bu proje, modern çalışma alanları ve kafeler için geliştirilmiş full-stack bir web uygulamasıdır. Müşteriler için interaktif bir rezervasyon deneyimi sunarken, işletme sahipleri için detaylı bir yönetim paneli sağlar.
 
-## Teknolojiler
+## 🌟 Öne Çıkan Özellikler
 
-*   **Backend:** PHP
-*   **Veritabanı:** MySQL
-*   **Frontend:** HTML, CSS, JavaScript
+### 🖱️ İnteraktif Rezervasyon Sistemi
+*   **Görsel Yerleşim Planı:** Kullanıcılar, kütüphane/kafe krokisi üzerinden masaları ve sandalyeleri görsel olarak inceleyebilir.
+*   **Anlık Doluluk Takibi:** Dolu ve boş koltuklar dinamik olarak görüntülenir.
+*   **Alan Seçimi:** "Sesli" ve "Sessiz" çalışma alanları arasında tercih yapma imkanı.
 
-## Kurulum
+### 🛍️ Dijital Menü ve Sipariş
+*   Kategorize edilmiş geniş ürün yelpazesi.
+*   Kullanıcı dostu arayüz ile hızlı sipariş oluşturma.
+*   Geçmiş siparişlerin takibi.
 
-1.  Proje dosyalarını sunucu dizinine (örneğin htdocs veya www) kopyalayın.
-2.  `helena.sql` dosyasını MySQL veritabanınıza içe aktarın.
-3.  `php/baglan.php` dosyasındaki veritabanı bağlantı ayarlarını kendi sunucu yapılandırmanıza göre düzenleyin:
-    ```php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "helena";
-    ```
-4.  Tarayıcınızdan `index.php` dosyasını çalıştırarak projeyi başlatın.
+### 🛡️ Rol Tabanlı Yönetim (RBAC)
+*   **Müşteri Paneli:** Profil yönetimi, rezervasyon yapma, sipariş verme.
+*   **Admin Paneli:** 
+    *   Tüm siparişlerin anlık takibi ve onayı.
+    *   Kitap envanter yönetimi ve kiralama takibi.
+    *   Rezervasyon yönetimi ve masa düzeni kontrolü.
 
-## Kullanım
+### 📚 Kütüphane Modülü
+*   Mevcut kitapların listelenmesi ve stok takibi.
+*   Ödünç alma ve iade süreçlerinin yönetimi.
 
-*   Ana sayfadan "Müşteri Girişi" veya "Admin Girişi" seçeneklerini kullanarak ilgili panellere erişebilirsiniz.
-*   Müşteri girişi yaptıktan sonra menüden seçim yapabilir, "Rezervasyon Yap" sayfasından müsait masaları görüntüleyebilirsiniz.
+## 🛠️ Teknik Altyapı
+
+Proje, güvenli ve ölçeklenebilir bir mimari üzerine inşa edilmiştir:
+
+*   **Backend:** PHP (Native), Restful API mimarisi (GET/POST istekleri ile veri yönetimi).
+*   **Veritabanı:** MySQL (İlişkisel veritabanı tasarımı, Trigger ve Event Scheduler kullanımı).
+*   **Frontend:** HTML5, CSS3 (Responsive Grid/Flexbox yapısı), JavaScript (ES6+, Fetch API).
+*   **Güvenlik:** SQL Injection koruması, Session yönetimi, güvenli parola saklama (Password Hashing).
+
+## 📂 Veritabanı Yapısı
+
+Sistem aşağıdaki ana tablolardan oluşur:
+*   `users`: Kullanıcı yetkilendirme ve profil verileri.
+*   `reservations`: Masa/Sandalye bazlı zaman ayarlı rezervasyon kayıtları.
+*   `orders`: Ürün ve sipariş detayları.
+*   `inventory`: Kitap ve ürün stok bilgileri.
+
+## 🔧 Kurulum
+
+1.  Repoyu klonlayın: `git clone https://github.com/alikiraz16/helena.git`
+2.  `helena.sql` dosyasını yerel veritabanınıza import edin.
+3.  `php/baglan.php` dosyasındaki veritabanı bağlantı bilgilerini güncelleyin.
+4.  Sunucunuzu başlatın ve tarayıcıdan erişin.
+
+---
+*Bu proje [Ali Kiraz](https://github.com/alikiraz16) tarafından geliştirilmiştir.*
