@@ -2,6 +2,7 @@
 
 
 **Helena**, kütüphane ve kafe deneyimini dijitalleştiren, kullanıcıların çalışma alanlarını rezerve etmelerini ve sipariş vermelerini sağlayan kapsamlı bir web tabanlı otomasyon sistemidir.
+
 BU PROJE BİLİŞİM SİSTEMLERİ ANALİZİ VE TASARIMI DERSİ KAPSAMINDA GELİŞTİRİLMİŞTİR!
 
 ## 🚀 Proje Hakkında
@@ -47,10 +48,3 @@ Sistem aşağıdaki ana tablolardan oluşur:
 *   `reservations`: Masa/Sandalye bazlı zaman ayarlı rezervasyon kayıtları.
 *   `orders`: Ürün ve sipariş detayları.
 *   `inventory`: Kitap ve ürün stok bilgileri.
-
-## 🔧 Kurulum
-
-1.  Repoyu klonlayın: `git clone https://github.com/alikiraz16/helena.git`
-2.  `helena.sql` dosyasını yerel veritabanınıza import edin.
-3.  `php/baglan.php` dosyasındaki veritabanı bağlantı bilgilerini güncelleyin.
-4.  Sunucunuzu başlatın ve tarayıcıdan erişin.
