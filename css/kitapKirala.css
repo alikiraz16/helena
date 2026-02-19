@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(to bottom, #f3e2be, #ece6db, #e8e1d5, #ece7e2);
+    color: #10375C;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f7f7f7;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #10375C;
+}
+
+.kitap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fafafa;
+}
+
+.kitap button {
+    padding: 5px 10px;
+    background-color: #FFD460;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.kitap button:hover {
+    background-color: #F3C623;
+    transition: 0.3s;
+}
+
+.kitap button:disabled {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+}
