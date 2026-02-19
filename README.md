@@ -1,8 +1,8 @@
 # Helena Library Cafe Automation System
 
-![Helena Logo](./dosyalar/LogoIcon/logo.png)
 
 **Helena**, kütüphane ve kafe deneyimini dijitalleştiren, kullanıcıların çalışma alanlarını rezerve etmelerini ve sipariş vermelerini sağlayan kapsamlı bir web tabanlı otomasyon sistemidir.
+BU PROJE BİLİŞİM SİSTEMLERİ ANALİZİ VE TASARIMI DERSİ KAPSAMINDA GELİŞTİRİLMİŞTİR!
 
 ## 🚀 Proje Hakkında
 
